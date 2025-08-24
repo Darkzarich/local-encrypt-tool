@@ -1,7 +1,13 @@
 # Local Encrypt Tool
 
-Simple encrypt and decrypt tools to store a sensitive string encrypted with a password. Uses AES-256-GCM encryption with a key derived from your password using PBKDF2.
+Node.js utility for encrypting and decrypting sensitive data locally. Uses AES-256-GCM encryption with a key derived from your provided password using PBKDF2.
 Doesn't use any external libraries or dependencies, just Node.js built-in crypto module.
+
+The resulting encrypted secret has the following format:
+
+```
+<salt>:<iv>:<authTag>:<encrypted>
+```
 
 ## Requirements
 

@@ -27,5 +27,5 @@ try {
   const result = decrypt(passphrase, password);
   console.log(result);
 } catch (err) {
-  console.error('Encryption failed:', err);
+  console.error('Decryption failed:', err);
 }
